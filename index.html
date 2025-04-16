@@ -1,31 +1,109 @@
+<!DOCTYPE html>
 <html>
 <head>
 <style>
+/* Base styles */
 body {
     background: lightgreen;
     font-family: Verdana;
+    margin: 0;
+    padding: 20px;
 }  
+
 #content {
     background: lightyellow;
     min-width: 200px;
     max-width: 500px;
     padding: 50px;
     margin: auto;
-    margin-top: -50px;
+    margin-top: 50px;
     line-height: 150%;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
 }
+
 h1 {
     letter-spacing: 2px;
-    font-size: 16px;
+    font-size: 24px;
     text-align: center;
+    color: #2c3e50;
+    margin-bottom: 10px;
 }
+
 h2 {
-    font-size: 14px;
+    font-size: 18px;
     text-align: center;
+    color: #34495e;
+    margin-bottom: 20px;
 }
+
 h3 {
-    font-size: 12px;
+    font-size: 16px;
+    color: #16a085;
+    border-bottom: 2px solid #16a085;
+    padding-bottom: 5px;
 }
+
+p {
+    color: #333;
+}
+
+a {
+    color: #2980b9;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+a:hover {
+    color: #3498db;
+    text-decoration: underline;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 5px;
+}
+
+/* Optional social media links styling */
+.social-links {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    font-size: 14px;
+    color: #7f8c8d;
+}
+
+/* Optional theme colors - uncomment one of these to change the color scheme */
+
+/* Blue Theme 
+body { background: #e0f7fa; }
+#content { background: #ffffff; }
+h1 { color: #01579b; }
+h2 { color: #0277bd; }
+h3 { color: #0288d1; border-bottom: 2px solid #0288d1; }
+*/
+
+/* Purple Theme 
+body { background: #f3e5f5; }
+#content { background: #ffffff; }
+h1 { color: #4a148c; }
+h2 { color: #6a1b9a; }
+h3 { color: #7b1fa2; border-bottom: 2px solid #7b1fa2; }
+*/
+
+/* Warm Theme 
+body { background: #fff3e0; }
+#content { background: #ffffff; }
+h1 { color: #e65100; }
+h2 { color: #ef6c00; }
+h3 { color: #f57c00; border-bottom: 2px solid #f57c00; }
+*/
 </style>
 </head>    
 <body>
@@ -46,8 +124,24 @@ h3 {
         <h3>EDUCATION</h3>
         Computer Science<br />
         Bob Jones University<br />
-        Example image:
-        <img src="https://cs.bju.edu/media/bju-math-division/bju-computer-science/site-assets/images/cs-logo-main.png" />
+        <img src="/api/placeholder/400/200" alt="CS Department Logo" />
+        
+        <!-- Optional sections you can uncomment and customize -->
+        <!--
+        <h3>SKILLS</h3>
+        <p>Programming Languages: Java, Python, HTML/CSS<br />
+        Tools: Git, Visual Studio Code<br />
+        Other: Problem Solving, Teamwork</p>
+        
+        <h3>INTERESTS</h3>
+        <p>Artificial Intelligence, Web Development, Mobile App Design</p>
+        
+        <div class="social-links">
+            <a href="#">GitHub</a> | 
+            <a href="#">LinkedIn</a> | 
+            <a href="#">Twitter</a>
+        </div>
+        -->
     </div>
 </body>
 </html>
